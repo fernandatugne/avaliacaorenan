@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git e GitHub</title>
+  <header>
+        <h1>Git e GitHub</h1>
+    
+        <style>
+                 body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color:  #90cffa;
+            }
+        
+            header {
+              background-color: #90cffa;
+              color: #cf68ff;
+              text-align: center;
+              padding: 10px;
+            }
+        
+            nav {
+              background-color: #000000;
+              padding: 10px;
+            }
+        
+            nav a {
+              color: #000000;
+              text-decoration: none;
+              margin-right: 20px;
+            }
+        
+            main {
+              max-width: 800px;
+              margin: 20px auto;
+              padding: 20px;
+              background-color: #fff;
+              border-radius: 5px;
+              box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+              color: #000; 
+            }
+        
+            main h2 {
+              color: #333;
+            }
+        
+            main p {
+              line-height: 1.6;
+            }
+        
+        
+            footer {
+              text-align: center;
+              padding: 10px;
+              background-color: #333;
+              color: #fff;
+            }
+              </style>
+   <a href="../index.html"><li>Home</li></a>
+      </header>
+
+ 
+  <main>
+    <h2>O Que é Git?</h2>
+    <p>Git é o sistema de controle de versão open source mais usado no mundo atualmente! Ele é usado para controlar o histórico de alterações de arquivos e principalmente de projetos de desenvolvimento de software. Ele permite mais flexibilidade no fluxo de trabalho, segurança e desempenho.</p>
+    <h2>E o GitHub?</h2>
+    <p>O GitHub é uma plataforma de desenvolvimento colaborativo que aloja projetos na nuvem utilizando o sistema de controle de versões chamado Git. A plataforma ajuda os desenvolvedores a armazenar e administrar o código e faz o registro de mudanças.</p>
+    
+    <h2>Configurando uma Chave SSH</h2>
+    <ul>
+      <li>Verificar se existe a chave SSH (ls -al~/.ssh).</li>
+      <li>Adicionar uma nova chave (ssh-keygen -t ed25519 -C "your_email@example.com").</li>
+      <li>Inicializar o agente SSH (eval"$(ssh-agent -s)").</li>
+      <li>Adicionar a chave SSH ao agente (ssh-add ~/.ssh/id_ed25519)</li>
+      <li>Copiar a chave SSH (clip < ~/.ssh/id_ed25519.pub).</li>
+      <li>Adicionara chave ao GitHub (GitHub -> Settings -> SSH and GPG keys -> New SSH key -> Colar *Coloque um título que identifique a chave*).</li>
+      <li>Testar a conexão (ssh -T git@github.com -> yes).</li>
+    </ul>
+
+    <h2>Criando um Repositório</h2>
+    <ul>
+      <li>No GitHub no canto superior direito selecione novo repositório.</li>
+      <li>Digite um nome breve e memorável para o repositório.</li>
+      <li>Escolha uma visibilidade do repositório.</li>
+      <li>Clique em Criar repositório.</li>
+    <p>Clonando um Repositório</p>
+    <li>No GitHub.com, navegue até a página principal do repositório.</li>
+      <li>Acima da lista de arquivos, clique em CODE.</li>
+      <li>Copie a URL do repositório.</li>
+      <li>Abra Git Bash e altere o diretório de trabalho atual para o local em que deseja ter o diretório clonado.</li>
+      <li>Digite git clone e cole a URL já copiada.</li>
+    </ul>
+  </main>
+</body>
+</html>
